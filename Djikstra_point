@@ -9,15 +9,15 @@ for entries in range(140000):
     blank_list.append(entries)
 initial_matrix = np.array(blank_list, dtype = object).reshape(400,350)
 
-ind1 = int(input('enter x coordinate of starting node'))  # 5
-ind2 = int(input('enter y coordinate of starting node'))  # 5
+ind1 = 5  #int(input('enter x coordinate of starting node'))  # 5
+ind2 = 5  #int(input('enter y coordinate of starting node'))  # 5
 ind = (ind1, 200-ind2)
 
 
 
 
-goal1 = int(input('enter x coordinate of goal node'))  # 295
-goal2 = int(input('enter y coordinate of goal node'))  # 195
+goal1 = 295  #int(input('enter x coordinate of goal node'))  # 295
+goal2 = 195  #int(input('enter y coordinate of goal node'))  # 195
 goal = (goal1, 200 - goal2)
 
 
@@ -384,7 +384,7 @@ visited_list = []
 breakwhile = False
 
 
-#start_time = time.clock()
+start_time = time.clock()
 def anim(visited,img_map, parent_map, node):
 
     path_list = []
@@ -471,5 +471,5 @@ while len(index_queue) != 0 and not breakwhile:
     sort_list2(explore_queue)
    
 
-#end_time = time.clock()
-#print(end_time - start_time)
+end_time = time.clock()
+print(end_time - start_time)

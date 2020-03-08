@@ -1,28 +1,22 @@
-# Djikstra-Implementation
-Point and rigid robot
+Djikstra Algorithm for point and rigid robot
 
-                                        ENPM661    Project 2 : - Djikstra Implementation . 
+                                    ENPM661    Project 2 : - Djikstra Implementation . 
 Group :- Divyam Garg and Preyash Parikh
 
-Nodes are explored by djikstra's algorithm and backtracking was applied with same giving the most optimal path and avoiding the obstacles.
+Nodes are explored by Djikstra's algorithm and backtracking was applied with same giving the most optimal path and avoiding the obstacles.
 
-start node = (5,5)
-goal node = (295,195)
+The code is to be run in Python 3
 
-User inputs can be given by uncommenting
-'''User inputs :-  
-first co-ordinante of start node
-second co-ordinate of start node
-first co-ordinate of goal node
-second co-ordinate of goal node'''
+Imported libraries : -import numpy as np -import matplotlib.pyplot as plt -import time -import math -import cv2
 
-Point robot:- 
-Action space of (300*200) = (Length, Breadth) with obstacles within the action space and no clearance given  
-of start node or goal node is in the obstacle the statement ("start/goal in the obstacle is mentioned"). 
+User inputs :-
+- Start node and goal node coordinates are asked to enter by user.
 
+Point robot:- -If start node or goal node is in the obstacle the statement ("start/goal in the obstacle is mentioned"). -The start node and goal nodes are identified by white color pixel.
 
-Rigid robot:- 
-Clearance of 'c' is given with the added clearance of radius of robot (r) making it total of r+c
-r and c are prefixed to 2 but can be changed and taken as user input by uncommenting line 36 and 37 
-and commenting line 40 and 41
-       
+Rigid robot:- -Clearance of 'c' is given with the added clearance of radius of robot (r) making it total of r+c -Predefined values of r and c is 2. -You can vary value of r and c by varying values at line number at 30 and 31 respectively. -If values of r and c is increased, also change the starting node location from (5,5). If not, it would be in border and program won't run.
+
+Time:-
+
+Total time of run (including backtracking) for "dijkstra_point.py" is 142.708 seconds for starting point (5,5) and goal node at (295,195)
+Total time of run (including backtracking) for "dijkstra_rigid.py" is 128.34480 seconds with robot radius as 2 px and clearance as 2 px for starting point (5,5) and goal node at (295,195).

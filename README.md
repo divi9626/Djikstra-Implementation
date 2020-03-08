@@ -6,11 +6,15 @@ Group :- Divyam Garg and Preyash Parikh
 
 Nodes are explored by djikstra's algorithm and backtracking was applied with same giving the most optimal path and avoiding the obstacles.
 
-User inputs :-  
+start node = (5,5)
+goal node = (295,195)
+
+User inputs can be given by uncommenting
+'''User inputs :-  
 first co-ordinante of start node
 second co-ordinate of start node
 first co-ordinate of goal node
-second co-ordinate of goal node
+second co-ordinate of goal node'''
 
 Point robot:- 
 Action space of (300*200) = (Length, Breadth) with obstacles within the action space and no clearance given  

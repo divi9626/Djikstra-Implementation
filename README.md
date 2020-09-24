@@ -1,7 +1,7 @@
 Djikstra Algorithm for point and rigid robot
 
-                                    ENPM661    Project 2 : - Djikstra Implementation . 
-Group :- Divyam Garg and Preyash Parikh
+                                   Djikstra Implementation . 
+@author : Divyam Garg
 
 Nodes are explored by Djikstra's algorithm and backtracking was applied with same giving the most optimal path and avoiding the obstacles.
 
